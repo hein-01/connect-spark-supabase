@@ -23,6 +23,7 @@ import ProtectedAdminRoute from "./components/admin/ProtectedAdminRoute";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ListAndGetPOS from "./pages/ListAndGetPOS";
 import UserDashboard from "./pages/UserDashboard";
+import FindJobs from "./pages/FindJobs";
 import MobileNavBar from "./components/MobileNavBar";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/businesses" element={<BusinessDirectory />} />
             <Route path="/find-services" element={<FindServices />} />
             <Route path="/find-shops" element={<FindShops />} />
+            <Route path="/find-jobs" element={<FindJobs />} />
             <Route path="/business/:id" element={<BusinessDetail />} />
             <Route path="/list-business" element={<ListBusiness />} />
             <Route path="/service-selection" element={<ServiceSelection />} />

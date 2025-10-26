@@ -1,5 +1,5 @@
 import React from "react";
-import { Home, ShoppingBag, Bookmark, Settings, Wrench } from "lucide-react";
+import { Home, ShoppingBag, Bookmark, Settings, Wrench, Briefcase } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 
@@ -29,6 +29,13 @@ const MobileNavBar = React.memo(() => {
       icon: ShoppingBag,
       path: "/find-shops",
       colors: "text-yellow-500"
+    },
+    {
+      id: "jobs",
+      label: "Jobs",
+      icon: Briefcase,
+      path: "/find-jobs",
+      colors: "text-green-500"
     },
     {
       id: "saved",

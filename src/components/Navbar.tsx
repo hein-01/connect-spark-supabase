@@ -59,6 +59,12 @@ export const Navbar = React.memo(() => {
             >
               Find Shops
             </Link>
+            <Link
+              to="/find-jobs"
+              className="text-nav-text hover:text-nav-text/80 text-sm transition-colors"
+            >
+              Find Jobs
+            </Link>
             
             {user ? (
               <DropdownMenu>
