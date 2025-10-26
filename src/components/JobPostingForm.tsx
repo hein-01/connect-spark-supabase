@@ -68,7 +68,11 @@ const benefitsOptions = [
   { id: "students-ok", label: "Students OK" },
 ];
 
-const JobPostingForm = () => {
+interface JobPostingFormProps {
+  onSuccess?: () => void;
+}
+
+const JobPostingForm = ({ onSuccess }: JobPostingFormProps) => {
   const [showCustomAge, setShowCustomAge] = useState(false);
   
   const maxDate = new Date();
@@ -95,6 +99,7 @@ const JobPostingForm = () => {
       description: "Your job posting has been submitted.",
     });
     form.reset();
+    onSuccess?.();
   };
 
   return (
