@@ -28,8 +28,8 @@ export const Navbar = React.memo(() => {
   ], []);
 
   const priceTexts = React.useMemo(() => [
-    "$10/month",
-    "$5/year"
+    "30000/month",
+    "5000/year"
   ], []);
 
   return (
